@@ -1,0 +1,46 @@
+/* Skills Section */
+.skills {
+  background-color: var(--light-bg);
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.skill-category {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+}
+
+.skill-category h3 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skill-list li {
+  display: flex;
+  align-items: center;
+}
+
+.skill-list li::before {
+  content: "•"; /* güzel nokta */
+  color: var(--accent-color); /* kendi accent rengin */
+  font-size: 1.3em; /* biraz büyüt */
+  margin-right: 10px;
+}
