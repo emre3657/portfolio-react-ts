@@ -11,18 +11,12 @@ export function HeroSection() {
             Merhaba, Ben{" "}
             <span style={{ color: "var(--accent-color)" }}>{name}</span>
           </h1>
-          {heading.map((head, i) =>
-            heading.length - 1 !== i ? (
-              <span key={i} className="head">
-                {head}
-                <br />
-              </span>
-            ) : (
-              <span key={i} className="head">
-                {head}
-              </span>
-            )
-          )}
+          {heading.map((head, i) => (
+            <span key={i} className="heading">
+              {head}
+              {i < heading.length - 1 && <br />}
+            </span>
+          ))}
           <div className="hero-buttons">
             <a href="#projects" className="btn">
               Projelerimi Gör
