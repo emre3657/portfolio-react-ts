@@ -6,7 +6,7 @@ export const SKILLS = [
       "JavaScript (ES6+)",
       "Responsive Tasarım",
       "React",
-      "Redux Tool Kit - RTK Query",
+      "Redux Tool Kit & RTK Query",
     ],
   },
   {
