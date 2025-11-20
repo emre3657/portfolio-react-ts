@@ -1,5 +1,5 @@
 import { useMemo, Fragment, type FC } from "react";
-import { EXPERIENCE, type ExperienceItem } from "../../data/experience";
+import { EXPERIENCE, type ExperienceItem } from "../../../data/experience";
 import "./Experience.css";
 
 const getRefDate = (item: ExperienceItem): Date => {

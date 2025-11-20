@@ -1,4 +1,4 @@
-import { HERO } from "../../data/hero";
+import { HERO } from "../../../data/hero";
 import "./HeroSection.css";
 
 export function HeroSection() {

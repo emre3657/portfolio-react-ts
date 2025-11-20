@@ -1,7 +1,7 @@
 // src/components/ProjectsSection/ProjectsSection.jsx
 import { useState } from "react";
-import { PROJECTS, type Project } from "../../data/projects";
-import { Lightbox, type LightboxItem } from "../../components/Lightbox";
+import { PROJECTS, type Project } from "../../../data/projects";
+import { Lightbox, type LightboxItem } from "./Lightbox";
 import "./ProjectsSection.css";
 
 export function ProjectsSection() {

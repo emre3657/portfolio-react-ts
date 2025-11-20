@@ -1,4 +1,4 @@
-import { SKILLS } from "../../data/skills";
+import { SKILLS } from "../../../data/skills";
 import "./SkillsSection.css";
 
 export function SkillsSection() {

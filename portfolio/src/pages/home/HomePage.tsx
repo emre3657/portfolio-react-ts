@@ -1,9 +1,9 @@
 import { Header } from "../../components/Header";
-import { HeroSection } from "./HeroSection";
-import { AboutSection } from "./AboutSection";
-import { SkillsSection } from "./SkillsSection";
-import { ProjectsSection } from "./ProjectsSection";
-import { ExperienceSection } from "./Experience";
+import { HeroSection } from "./hero-section/HeroSection";
+import { AboutSection } from "./about-section/AboutSection";
+import { SkillsSection } from "./skills-section/SkillsSection";
+import { ProjectsSection } from "./projects-section/ProjectsSection";
+import { ExperienceSection } from "./experience-section/Experience";
 
 export function HomePage() {
   return (

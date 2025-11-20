@@ -1,5 +1,5 @@
-import { ABOUT } from "../../data/about";
-import profileImage from "../../assets/images/profile.jpg";
+import { ABOUT } from "../../../data/about";
+import profileImage from "../../../assets/images/profile.jpg";
 import "./AboutSection.css";
 
 export function AboutSection() {
