@@ -3,6 +3,7 @@ import { HeroSection } from "./HeroSection";
 import { AboutSection } from "./AboutSection";
 import { SkillsSection } from "./SkillsSection";
 import { ProjectsSection } from "./ProjectsSection";
+import { ExperienceSection } from "./Experience";
 
 export function HomePage() {
   return (
@@ -12,6 +13,7 @@ export function HomePage() {
       <AboutSection />
       <SkillsSection />
       <ProjectsSection />
+      <ExperienceSection />
     </>
   );
 }
