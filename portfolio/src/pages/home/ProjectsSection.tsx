@@ -8,6 +8,8 @@ export function ProjectsSection() {
   const [lightboxItem, setLightboxItem] = useState<LightboxItem>(null);
   // { type: 'image' | 'video', src: string, title?: string } | null
 
+  const { title, payload } = PROJECTS;
+
   const openLightbox = (project: Project) => {
     setLightboxItem({
       type: project.type,
@@ -21,10 +23,10 @@ export function ProjectsSection() {
   return (
     <section id="projects">
       <div className="container">
-        <h2 className="section-title">Projeler</h2>
+        <h2 className="section-title">{title}</h2>
 
         <div className="projects-grid">
-          {PROJECTS.map((project) => (
+          {payload.map((project) => (
             <div key={project.id} className="project-card">
               <button
                 type="button"

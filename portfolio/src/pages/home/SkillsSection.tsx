@@ -2,12 +2,13 @@ import { SKILLS } from "../../data/skills";
 import "./SkillsSection.css";
 
 export function SkillsSection() {
+  const { title, payload } = SKILLS;
   return (
     <section id="skills" className="skills">
       <div className="container">
-        <h2 className="section-title">Yetenekler</h2>
+        <h2 className="section-title">{title}</h2>
         <div className="skills-container">
-          {SKILLS.map((skill) => (
+          {payload.map((skill) => (
             <div key={skill.category} className="skill-category">
               <h3>{skill.category}</h3>
               <ul className="skill-list">

@@ -8,7 +8,6 @@ type ProjectTag = {
   label: string;
   special?: boolean;
 };
-
 export type Project = {
   id: string;
   title: string;
@@ -24,79 +23,87 @@ export type Project = {
   }[];
 };
 
-export const PROJECTS: Project[] = [
-  {
-    id: "faceid",
-    title: "Face ID Login",
-    description:
-      "Python/Flask ile yüz tanıma tabanlı giriş akışı... (Eğitsel/POC)",
-    thumbnail: faceidImg,
-    type: "video", // 'image' | 'video'
-    mediaSrc: faceidVideo,
-    tags: [
-      { label: "🎓 Bitirme Projesi", special: true },
-      { label: "Flask" },
-      { label: "OpenCV" },
-      { label: "Face Recognition" },
-      { label: "MySQL" },
-      { label: "HTML5 & CSS3" },
-    ],
-    links: [
-      {
-        label: "GitHub",
-        href: "https://github.com/emre3657/FaceID-Web-App",
-        iconClass: "fab fa-github",
-      },
-    ],
-  },
-  {
-    id: "ecommerce",
-    title: "E-Commerce (MVC)",
-    description:
-      "ASP.NET Core MVC ile deneysel e-ticaret uygulaması... (Eğitsel)",
-    thumbnail: ecommerceImg,
-    type: "image",
-    mediaSrc: ecommerceImg,
-    tags: [
-      { label: "💼 Staj Projesi", special: true },
-      { label: "ASP.NET Core MVC" },
-      { label: "EF Core" },
-      { label: "SQL Server" },
-      { label: "Razor" },
-    ],
-    links: [
-      {
-        label: "GitHub",
-        href: "https://github.com/emre3657/E-Commerce-App",
-        iconClass: "fab fa-github",
-      },
-    ],
-  },
-  {
-    id: "jobs",
-    title: "Jobs API",
-    description:
-      "Kimlik doğrulamalı iş başvurusu takip API’si... (Canlı demo mevcut, Eğitsel)",
-    thumbnail: jobsApiImg,
-    type: "image",
-    mediaSrc: jobsApiImg,
-    tags: [
-      { label: "Node.js" },
-      { label: "Express" },
-      { label: "MongoDB" },
-      { label: "JWT" },
-    ],
-    links: [
-      {
-        label: "Demo",
-        href: "https://jobs-api-fw93.onrender.com",
-        iconClass: "fa-solid fa-link",
-      },
-      {
-        label: "GitHub",
-        href: "https://github.com/emre3657/Jobs-API",
-        iconClass: "fab fa-github",
-      },
-    ],
-  },
-];
+export type Projects = {
+  title: string;
+  payload: Project[];
+};
+
+export const PROJECTS: Projects = {
+  title: "Projeler",
+  payload: [
+    {
+      id: "faceid",
+      title: "Face ID Login",
+      description:
+        "Python/Flask ile yüz tanıma tabanlı giriş akışı... (Eğitsel/POC)",
+      thumbnail: faceidImg,
+      type: "video", // 'image' | 'video'
+      mediaSrc: faceidVideo,
+      tags: [
+        { label: "🎓 Bitirme Projesi", special: true },
+        { label: "Flask" },
+        { label: "OpenCV" },
+        { label: "Face Recognition" },
+        { label: "MySQL" },
+        { label: "HTML5 & CSS3" },
+      ],
+      links: [
+        {
+          label: "GitHub",
+          href: "https://github.com/emre3657/FaceID-Web-App",
+          iconClass: "fab fa-github",
+        },
+      ],
+    },
+    {
+      id: "ecommerce",
+      title: "E-Commerce (MVC)",
+      description:
+        "ASP.NET Core MVC ile deneysel e-ticaret uygulaması... (Eğitsel)",
+      thumbnail: ecommerceImg,
+      type: "image",
+      mediaSrc: ecommerceImg,
+      tags: [
+        { label: "💼 Staj Projesi", special: true },
+        { label: "ASP.NET Core MVC" },
+        { label: "EF Core" },
+        { label: "SQL Server" },
+        { label: "Razor" },
+      ],
+      links: [
+        {
+          label: "GitHub",
+          href: "https://github.com/emre3657/E-Commerce-App",
+          iconClass: "fab fa-github",
+        },
+      ],
+    },
+    {
+      id: "jobs",
+      title: "Jobs API",
+      description:
+        "Kimlik doğrulamalı iş başvurusu takip API’si... (Canlı demo mevcut, Eğitsel)",
+      thumbnail: jobsApiImg,
+      type: "image",
+      mediaSrc: jobsApiImg,
+      tags: [
+        { label: "Node.js" },
+        { label: "Express" },
+        { label: "MongoDB" },
+        { label: "JWT" },
+      ],
+      links: [
+        {
+          label: "Demo",
+          href: "https://jobs-api-fw93.onrender.com",
+          iconClass: "fa-solid fa-link",
+        },
+        {
+          label: "GitHub",
+          href: "https://github.com/emre3657/Jobs-API",
+          iconClass: "fab fa-github",
+        },
+      ],
+    },
+  ],
+};

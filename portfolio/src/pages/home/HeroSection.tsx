@@ -13,12 +13,14 @@ export function HeroSection() {
           </h1>
           {heading.map((head, i) =>
             heading.length - 1 !== i ? (
-              <span className="head">
+              <span key={i} className="head">
                 {head}
                 <br />
               </span>
             ) : (
-              <span className="head">{head}</span>
+              <span key={i} className="head">
+                {head}
+              </span>
             )
           )}
           <div className="hero-buttons">
