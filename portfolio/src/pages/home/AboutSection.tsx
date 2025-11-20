@@ -1,3 +1,4 @@
+import { ABOUT } from "../../data/about";
 import profileImage from "../../assets/images/profile.jpg";
 import "./AboutSection.css";
 
@@ -8,15 +9,9 @@ export function AboutSection() {
         <h2 className="section-title">Hakkımda</h2>
         <div className="about-content">
           <div className="about-text">
-            <p>
-              Merhaba! Ben Emre. Web geliştirme yolculuğumda sürekli öğreniyor,
-              denedikçe gelişiyor ve üreterek ilerliyorum.
-            </p>
-            <p>
-              Amacım; kullanıcıya değer katan, işlevsel ve modern web
-              deneyimleri oluşturmak. Yeni teknolojileri keşfetmek ve bunları
-              projelerde hayata geçirmekten keyif alıyorum.
-            </p>
+            {ABOUT.map((info) => (
+              <p>{info}</p>
+            ))}
             <a href="#contact" className="btn" style={{ marginTop: 20 }}>
               İletişime Geç
             </a>
