@@ -1,18 +1,26 @@
+import { HERO } from "../../data/hero";
 import "./HeroSection.css";
 
 export function HeroSection() {
+  const { name, heading } = HERO;
   return (
     <section className="hero">
       <div className="container">
         <div className="hero-content">
           <h1>
             Merhaba, Ben{" "}
-            <span style={{ color: "var(--accent-color)" }}>Emre</span>
+            <span style={{ color: "var(--accent-color)" }}>{name}</span>
           </h1>
-          <p>
-            Modern web dünyasında kendi yolumu inşa ediyorum. <br />
-            Karmaşık sorunları yazılımla basitleştirmeyi seviyorum.
-          </p>
+          {heading.map((head, i) =>
+            heading.length - 1 !== i ? (
+              <span className="head">
+                {head}
+                <br />
+              </span>
+            ) : (
+              <span className="head">{head}</span>
+            )
+          )}
           <div className="hero-buttons">
             <a href="#projects" className="btn">
               Projelerimi Gör
