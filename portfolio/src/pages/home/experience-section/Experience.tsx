@@ -1,12 +1,7 @@
 import { useMemo, Fragment, type FC } from "react";
-import { EXPERIENCE, type ExperienceItem } from "../../../data/experience";
+import { EXPERIENCE } from "../../../data/experience";
+import { getRefDate } from "../../../utility/experience";
 import "./Experience.css";
-
-const getRefDate = (item: ExperienceItem): Date => {
-  const end = item.endTime ? new Date(item.endTime) : null;
-  const start = new Date(item.startTime);
-  return end ?? start;
-};
 
 export const ExperienceSection: FC = () => {
   const sortedItems = useMemo(
