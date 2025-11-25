@@ -1,0 +1,129 @@
+/* Contact Section */
+.contact-container {
+  display: flex;
+  gap: 50px;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info p:first-child {
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  flex: 1;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-item a {
+  all: unset;
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+
+.contact-item a:hover {
+  font-size: 15px;
+}
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  color: white;
+}
+
+.contact-icon i {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Toast Message */
+.toast {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 9999;
+
+  max-width: min(300px, 90vw);
+  padding: 12px 14px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+  color: #fff;
+  background: var(--primary-color, #2d5d87);
+  text-align: left;
+
+  /* initial state */
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+
+  /* show hide animation during 2 seconds */
+  animation: toast-show-hide 2s ease forwards;
+}
+
+.toast-success {
+  background: #2e7d32;
+}
+
+.toast-pending {
+  background-color: #e4e008;
+}
+
+.toast-error {
+  background: #c62828;
+}
+
+@keyframes toast-show-hide {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}

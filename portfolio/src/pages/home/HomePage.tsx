@@ -4,6 +4,7 @@ import { AboutSection } from "./about-section/AboutSection";
 import { SkillsSection } from "./skills-section/SkillsSection";
 import { ProjectsSection } from "./projects-section/ProjectsSection";
 import { ExperienceSection } from "./experience-section/Experience";
+import { ContactSection } from "./contact-section/ContactSection";
 
 export function HomePage() {
   return (
@@ -14,6 +15,7 @@ export function HomePage() {
       <SkillsSection />
       <ProjectsSection />
       <ExperienceSection />
+      <ContactSection />
     </>
   );
 }
