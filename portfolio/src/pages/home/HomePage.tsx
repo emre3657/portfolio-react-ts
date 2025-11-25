@@ -5,6 +5,7 @@ import { SkillsSection } from "./skills-section/SkillsSection";
 import { ProjectsSection } from "./projects-section/ProjectsSection";
 import { ExperienceSection } from "./experience-section/Experience";
 import { ContactSection } from "./contact-section/ContactSection";
+import { FooterSection } from "./footer-section/FooterSection";
 
 export function HomePage() {
   return (
@@ -16,6 +17,7 @@ export function HomePage() {
       <ProjectsSection />
       <ExperienceSection />
       <ContactSection />
+      <FooterSection />
     </>
   );
 }
