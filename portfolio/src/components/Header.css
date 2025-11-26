@@ -7,28 +7,40 @@ header {
   z-index: 100;
   background-color: rgba(255, 255, 255, 0.95);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 0 40px;
+  min-height: 80px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* header class*/
+.api-state-success {
+  justify-content: space-around;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
 }
 
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--primary-color);
+  text-align: center;
+}
+
+.logo a {
+  all: unset;
+  cursor: pointer;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
-}
-
-.nav-links li {
-  margin-left: 30px;
+  gap: 30px;
 }
 
 .nav-links a {
@@ -40,4 +52,10 @@ nav {
 
 .nav-links a:hover {
   color: var(--primary-color);
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
 }

@@ -1,0 +1,62 @@
+.api-state {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+  /* remove text caret */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  caret-color: transparent;
+}
+
+.api-state.fade-out {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+/* Colors */
+.pending {
+  background-color: rgb(252, 195, 39);
+}
+
+.active {
+  background-color: rgb(23, 255, 2);
+}
+
+.inactive {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(252, 40, 40);
+  cursor: pointer;
+}
+
+.loader {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+
+  border: 2px solid transparent; /* tüm kenarlar şeffaf */
+  border-top-color: #fff; /* sadece üst kısım beyaz */
+
+  animation: spin 0.6s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
