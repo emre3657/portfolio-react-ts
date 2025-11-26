@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { ABOUT } from "../../../data/about";
 import profileImage from "../../../assets/images/profile.jpg";
 import "./AboutSection.css";
@@ -12,7 +13,10 @@ export function AboutSection() {
         <div className="about-content">
           <div className="about-text">
             {payload.map((info, i) => (
-              <p key={i}>{info}</p>
+              <Fragment key={i}>
+                <p>{info}</p>
+                {i !== payload.length - 1 && <br />}
+              </Fragment>
             ))}
             <a href="#contact" className="btn" style={{ marginTop: 20 }}>
               İletişime Geç
