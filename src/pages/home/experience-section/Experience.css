@@ -86,3 +86,39 @@
   color: #0078ff;
   border-color: rgba(0, 120, 255, 0.25);
 }
+
+@media (max-width: 768px) {
+  .timeline {
+    padding: 0 16px;
+    gap: 16px;
+  }
+
+  .timeline::after {
+    left: 16px;
+    transform: none;
+    width: 2px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding: 0 0 0 32px;
+    left: 0 !important;
+  }
+
+  .timeline-content {
+    padding: 14px 16px;
+  }
+
+  .timeline-content h3 {
+    font-size: 16px;
+  }
+
+  .timeline-content .org {
+    font-size: 14px;
+  }
+
+  .timeline-content p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}

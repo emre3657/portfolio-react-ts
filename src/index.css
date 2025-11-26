@@ -87,15 +87,4 @@ section {
   .contact-container {
     flex-direction: column;
   }
-
-  .timeline::after {
-    left: 15px;
-    transform: none;
-  }
-  .timeline-item {
-    width: 100%;
-    padding-left: 40px;
-    padding-right: 10px;
-    left: 0 !important;
-  }
 }
