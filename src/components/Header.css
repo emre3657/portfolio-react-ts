@@ -11,18 +11,9 @@ header {
   min-height: 80px;
 
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-/* header class*/
-.api-state-success {
   justify-content: space-around;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 
 .logo {
@@ -55,7 +46,7 @@ nav {
 }
 
 @media (max-width: 900px) {
-  .nav-links {
+  nav {
     display: none;
   }
 }

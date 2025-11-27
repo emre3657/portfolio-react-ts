@@ -1,12 +1,9 @@
-import { useApiStatus } from "../context/customHooks";
 import { ApiStatus } from "./ApiStatus";
 import "./Header.css";
 
 export function Header() {
-  const { state: apiState } = useApiStatus();
-
   return (
-    <header className={apiState === "success" ? "api-state-success" : ""}>
+    <header>
       <div className="logo">
         <a href="#">Emre Ekinci</a>
       </div>
