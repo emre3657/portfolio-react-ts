@@ -109,6 +109,10 @@
   background: #c62828;
 }
 
+.toast-warning {
+  background-color: #fdc52c;
+}
+
 @keyframes toast-show-hide {
   0% {
     opacity: 0;

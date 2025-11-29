@@ -14,6 +14,7 @@ export function ContactForm() {
 
   const showSuccess = state.status === "success";
   const showError = state.status === "error";
+  const showWarning = state.status === "warning";
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -80,6 +81,12 @@ export function ContactForm() {
       {showError && (
         <div key={state.toastId} className="toast toast-error">
           {state.message || "Bir hata oluştu."}
+        </div>
+      )}
+
+      {showWarning && (
+        <div key={state.toastId} className="toast toast-warning">
+          {state.message}
         </div>
       )}
     </div>
