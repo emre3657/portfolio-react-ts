@@ -3,6 +3,7 @@ import faceidImg from "../assets/images/faceid.png";
 import faceidVideo from "../assets/videos/faceid-demo.mp4";
 import ecommerceImg from "../assets/images/e-commerce.png";
 import jobsApiImg from "../assets/images/jobs-api.png";
+import taskflowImg from "../assets/images/taskflow.png";
 
 type ProjectTag = {
   label: string;
@@ -35,7 +36,7 @@ export const PROJECTS: Projects = {
       id: "faceid",
       title: "Face ID Login",
       description:
-        "Python/Flask ile yüz tanıma tabanlı giriş akışı... (Eğitsel/POC)",
+        "Python/Flask ile yüz tanıma tabanlı giriş akışı uygulaması.",
       thumbnail: faceidImg,
       type: "video", // 'image' | 'video'
       mediaSrc: faceidVideo,
@@ -57,9 +58,9 @@ export const PROJECTS: Projects = {
     },
     {
       id: "ecommerce",
-      title: "E-Commerce (MVC)",
+      title: "E-Commerce App",
       description:
-        "ASP.NET Core MVC ile deneysel e-ticaret uygulaması... (Eğitsel)",
+        "ASP.NET Core MVC ile deneysel e-ticaret uygulaması.",
       thumbnail: ecommerceImg,
       type: "image",
       mediaSrc: ecommerceImg,
@@ -82,7 +83,7 @@ export const PROJECTS: Projects = {
       id: "jobs",
       title: "Jobs API",
       description:
-        "Kimlik doğrulamalı iş başvurusu takip API’si... (Canlı demo mevcut, Eğitsel)",
+        "Kimlik doğrulamalı iş başvurusu takip API’si.",
       thumbnail: jobsApiImg,
       type: "image",
       mediaSrc: jobsApiImg,
@@ -94,7 +95,7 @@ export const PROJECTS: Projects = {
       ],
       links: [
         {
-          label: "Demo",
+          label: "Canlı",
           href: "https://jobs-api-fw93.onrender.com",
           iconClass: "fa-solid fa-link",
         },
@@ -105,5 +106,41 @@ export const PROJECTS: Projects = {
         },
       ],
     },
+    {
+      id: "taskflow",
+      title: "TaskFlow",
+      description:
+        "Görev yönetimi ve takip uygulaması. (Yayında)",
+      thumbnail: taskflowImg,
+      type: "image",
+      mediaSrc: taskflowImg,
+      tags: [
+        { label: "React" },
+        { label: "Tailwind CSS" },
+        { label: "TypeScript" },
+        { label: "Node.js" },
+        { label: "Express" },
+        { label: "JWT" },
+        { label: "Prisma" },
+        { label: "PostgreSQL" },
+      ],
+      links: [
+        {
+          label: "Canlı",
+          href: "https://taskflow.emreekincidev.com",
+          iconClass: "fa-solid fa-link",
+        },
+        {
+          label: "GitHub",
+          href: "https://github.com/emre3657/taskflow-web",
+          iconClass: "fab fa-github",
+        },
+        {
+          label: "GitHub",
+          href: "https://github.com/emre3657/taskflow-api",
+          iconClass: "fab fa-github",
+        },
+      ],
+      }
   ],
 };
